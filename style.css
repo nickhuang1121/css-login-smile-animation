@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background: #eef3f4;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.loginBoard {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 95%;
+    max-width: 500px;
+    min-height: 500px;
+    border: 1px solid #dfdfdf;
+    border-radius: 20px;
+    background: white;
+}
+
+.cartoon {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border: 4px solid #3a5e77;
+    border-radius: 99em;
+    background: #a9ddf3;
+    overflow: hidden;
+
+}
+
+.cartoon_head {
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 85px);
+    width: 170px;
+    height: 129px;
+    background: white;
+    border: 4px solid #3a5e77;
+    border-bottom: none;
+    border-radius: 99em 99em 0 0;
+    z-index: 5;
+}
+
+.cartoon_face {
+    position: absolute;
+    top: 120px;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background: #ddf1f9;
+    border-radius: 0 0 99em 99em;
+    z-index: 6;
+}
+
+.cartoon_hair {
+    position: absolute;
+    top: 120px;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background: #ddf1f9;
+    border-radius: 0 0 99em 99em;
+    z-index: 10
+}
+
+.cartoon_eyeL {
+    position: absolute;
+    top: 154px;
+    left: 120px;
+    width: 10px;
+    height: 10px;
+    background: #3a5e77;
+    border-radius: 99em 99em;
+    z-index: 10
+}
+
+.cartoon_eyeR {
+    position: absolute;
+    top: 154px;
+    left: 162px;
+    width: 10px;
+    height: 10px;
+    background: #3a5e77;
+    border-radius: 99em 99em;
+    z-index: 10
+}
+
+.cartoon_mouth {
+    position: absolute;
+    top: 180px;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 50px;
+    z-index: 10
+}
+
+.cartoon_body {
+    position: absolute;
+    top: 60%;
+    width: 300px;
+    height: 200px;
+    background: white;
+    border: 4px solid #3a5e77;
+    border-radius: 60px;
+    z-index: 1;
+}
+
+
+
+.cartoon_hand {
+    position: absolute;
+
+    width: 80px;
+    height: 200px;
+    z-index: 15;
+}
+
+.cartoon_handL {
+    top: 89px;
+    left: -100px;
+    transform: rotate(0deg);
+}
+
+.cartoon_handL.show {
+    top: 89px;
+    left: 15px;
+    transform: rotate(59deg);
+}
+
+.cartoon_handR {
+    top: 89px;
+    left: 400px;
+    transform: rotate(0deg);
+
+}
+
+.cartoon_handR.show {
+    top: 89px;
+    left: 201px;
+    transform: rotate(-59deg);
+}
+
+.cartoon_handR .cartoon_hand_inner {
+    transform: scaleX(-1);
+}
+
+.finger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 80px;
+    border: 3px solid #3a5e77;
+    border-bottom: none;
+    border-radius: 99em 99em 0 0;
+    background: #a9ddf3;
+}
+
+.finger:nth-of-type(1) {
+    top: 10px;
+}
+
+.finger:nth-of-type(2) {
+    left: 25%;
+}
+
+.finger:nth-of-type(3) {
+    top: 5px;
+    left: 50%;
+}
+
+.finger:nth-of-type(4) {
+    top: 15px;
+    left: 75%;
+}
+
+.wrist {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background: white;
+    border: 4px solid #3a5e77;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+}
+
+.cartoon_hand_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.inputBoard {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.inputBoard input {
+    padding: 10px 10px;
+    width: 100%;
+    font: 20px/1.5 "arial";
+    border-radius: 10px;
+    background: #ddf1f9;
+}
+
+.inputBoard input:hover {
+    border: 2px solid #a9ddf3;
+}
+
+
+.inputBoard_email {
+    margin-bottom: 30px;
+}
+
+.transition {
+    transition: .5s;
+}
+
+.facial1 {
+    transform: translate(-10px, 10px);
+}
+
+.facial2 {
+    transform: translate(-3px, 3px);
+}
+
+p {
+    font: bold 20px/1.5 "arial";
+    color: #3a5e77;
+}
+
+.btn_login {
+    display: block;
+    margin-top: 50px;
+    padding: 20px 0;
+    font: bold 20px/1.5 "arial";
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    background: #3a5e77;
+}
